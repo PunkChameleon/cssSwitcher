@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example Stylesheet Adding</title>
+</head>
+<body>
+
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="jquery.cssSwitcher.js"></script>
+<script>
+	// Example Script
+
+	$(document).ready(function() {
+		// To add
+		$cssSwitcher.add('some.css');
+		console.log('added!')
+
+		// To replace
+		$cssSwitcher.replace('some.css', 'other.css');
+		console.log('switched!');
+
+		// To remove
+		$cssSwitcher.remove('other.css');
+		console.log('removed!');
+
+	});
+
+</script>
+</body>
+</html>
